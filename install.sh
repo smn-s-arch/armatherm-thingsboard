@@ -101,7 +101,6 @@ else
     echo "Java alternatives configured."
 fi
 
-
 # Step 3: Install Thingsboard package
 echo "Step 3: Installing Thingsboard Service."
 wget https://github.com/thingsboard/thingsboard/releases/download/v3.9.1/thingsboard-3.9.1.deb
@@ -149,8 +148,9 @@ export SPRING_DATASOURCE_USERNAME=${THINGSBOARD_USER}
 export SPRING_DATASOURCE_PASSWORD=${THINGSBOARD_PASS}
 export SQL_POSTGRES_TS_KV_PARTITIONING=MONTHS
 
-#Server Port Configuration
-export TRANSPORT_HTTP_BIND_PORT=9090
+# Server Port Configuration
+export HTTP_BIND_PORT=9090
+export MQTT_BIND_PORT=1882
 EOL
 
 if [ $? -ne 0 ]; then
@@ -161,7 +161,8 @@ fi
 
 # Step 6: Run Thingsboard installation script
 echo "Step 6: Running Thingsboard installation script."
-sudo /usr/share/thingsboard/bin/install/install.sh
+cd /usr/share/thingsboard/bin/install/
+sudo ./install.sh
 if [ $? -ne 0 ]; then
     prompt_continue
 else
