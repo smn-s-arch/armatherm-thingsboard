@@ -1,0 +1,9 @@
+
+
+int inputMax
+int inputMin
+int measurements
+int Temperatur
+int Tmax
+int Tmin
+int wait
