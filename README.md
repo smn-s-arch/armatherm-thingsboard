@@ -11,5 +11,6 @@
 6. **Device Profile anlegen**
 7. **Device erstellen**
 8. **Server Attributes anlegen**
+    - siehe Ordner `tb-devices`
 9. **Access Token kopieren**
     - In ChirpStack für das Device eine Variable `ThingsBoardAccessToken` anlegen und als **Value** den ThingsBoard Access Token eintragen
