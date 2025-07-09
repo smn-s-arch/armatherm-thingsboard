@@ -2,6 +2,7 @@
 
 1. **User anlegen**
 2. **ThingsBoard Rule Chains importieren**
+2.1 ** Root Rulechain auf Basis Regelkette anpassen
 3. **Rulechain-Verknüpfungen anpassen**
 4. **ChirpStack API Token generieren** (in ChirpStack)
     - In der ThingsBoard Downlink Rulechain folgenden Header anpassen:
