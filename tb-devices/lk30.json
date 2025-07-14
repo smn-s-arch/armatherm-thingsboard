@@ -5,10 +5,6 @@
   "type": "DEFAULT",
   "transportType": "DEFAULT",
   "provisionType": "DISABLED",
-  "defaultRuleChainId": {
-    "entityType": "RULE_CHAIN",
-    "id": "dd156850-fa9a-11ef-8878-11b09563e0f3"
-  },
   "defaultDashboardId": null,
   "defaultQueueName": null,
   "provisionDeviceKey": null,

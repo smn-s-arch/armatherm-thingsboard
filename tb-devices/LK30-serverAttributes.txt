@@ -1,9 +1,9 @@
 
-
-int inputMax
-int inputMin
-int measurements
-int Temperatur
-int Tmax
-int Tmin
-int wait
+Key;Datentyp;defaultValue;Kommentar
+inputMax;int;0;"Normalerweise '11000', Max-Wert des AD"
+inputMin;int;0;"Normalerweise '1000', Min-Wert des AD"
+measurements;int;0;"Anzahl Senden alle m Messungen. Wird über Dashboard konfiguriert"
+wait;int;0;"Wartezeit zwischen zwei Messungen. Wird über Dashboard konfiguriert"
+Temperatur;int;0;"Hilfs Attribut für die Temperaturberechnung der rule chain"
+Tmax;int;0;"Maximal Messbereich des Gerätes laut Typenschild"
+Tmin;int;0;"Minimal Messbereich des Gerätes laut Typenschild"
